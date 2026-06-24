@@ -3,11 +3,8 @@
 set -euo pipefail
 
 # --------------------------------------------------
-
 # Git History Cleaner
-
 # 删除指定文件/目录的所有历史记录
-
 # --------------------------------------------------
 
 echo "========================================"
@@ -41,7 +38,6 @@ exit 1
 fi
 
 # 检查 git-filter-repo
-
 if ! command -v git-filter-repo >/dev/null 2>&1; then
 echo "⚠️ 未检测到 git-filter-repo"
 echo
