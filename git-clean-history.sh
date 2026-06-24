@@ -39,26 +39,22 @@ fi
 
 # 检查 git-filter-repo
 if ! command -v git-filter-repo >/dev/null 2>&1; then
-echo "⚠️ 未检测到 git-filter-repo"
-echo
-
-```
-if command -v brew >/dev/null 2>&1; then
-    echo "正在通过 Homebrew 安装..."
-    brew install git-filter-repo
-elif command -v pip3 >/dev/null 2>&1; then
-    echo "正在通过 pip3 安装..."
-    pip3 install git-filter-repo
-elif command -v pip >/dev/null 2>&1; then
-    echo "正在通过 pip 安装..."
-    pip install git-filter-repo
-else
-    echo "❌ 无法自动安装 git-filter-repo"
-    echo "请手动安装后重试"
-    exit 1
-fi
-```
-
+    echo "⚠️ 未检测到 git-filter-repo"
+    echo
+    if command -v brew >/dev/null 2>&1; then
+        echo "正在通过 Homebrew 安装..."
+        brew install git-filter-repo
+    elif command -v pip3 >/dev/null 2>&1; then
+        echo "正在通过 pip3 安装..."
+        pip3 install git-filter-repo
+    elif command -v pip >/dev/null 2>&1; then
+        echo "正在通过 pip 安装..."
+        pip install git-filter-repo
+    else
+        echo "❌ 无法自动安装 git-filter-repo"
+        echo "请手动安装后重试"
+        exit 1
+    fi
 fi
 
 echo
@@ -103,18 +99,15 @@ echo
 read -p "继续? (y/N): " CONFIRM
 
 if [[ ! "$CONFIRM" =~ ^[Yy]$ ]]; then
-echo "已取消"
-exit 0
+    echo "已取消"
+    exit 0
 fi
 
 echo
 echo "开始重写历史..."
 echo
 
-git filter-repo 
---force 
-"${FILTER_ARGS[@]}" 
---invert-paths
+git filter-repo --force "${FILTER_ARGS[@]}" --invert-paths
 
 echo
 echo "清理无引用对象..."
