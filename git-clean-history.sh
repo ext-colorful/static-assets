@@ -69,29 +69,22 @@ echo
 FILTER_ARGS=()
 
 for TARGET in "$@"; do
+    if [ ! -e "$TARGET" ]; then
+        echo "⚠️ 跳过不存在的路径:"
+        echo "   $TARGET"
+        continue
+    fi
 
-```
-if [ ! -e "$TARGET" ]; then
-    echo "⚠️ 跳过不存在的路径:"
-    echo "   $TARGET"
-    continue
-fi
-
-REL_PATH=$(realpath --relative-to="$REPO_ROOT" "$TARGET" 2>/dev/null || python3 - <<PY
-```
-
-import os
-print(os.path.relpath("$TARGET", "$REPO_ROOT"))
-PY
+    REL_PATH=$(realpath --relative-to="$REPO_ROOT" "$TARGET" 2>/dev/null || python3 - "$TARGET" "$REPO_ROOT" <<'PYEOF'
+import os, sys
+print(os.path.relpath(sys.argv[1], sys.argv[2]))
+PYEOF
 )
 
-```
-echo "✔ 添加:"
-echo "   $REL_PATH"
+    echo "✔ 添加:"
+    echo "   $REL_PATH"
 
-FILTER_ARGS+=(--path "$REL_PATH")
-```
-
+    FILTER_ARGS+=(--path "$REL_PATH")
 done
 
 if [ ${#FILTER_ARGS[@]} -eq 0 ]; then
