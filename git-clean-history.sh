@@ -17,11 +17,16 @@ echo
 REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null || true)
 
 if [ -z "$REPO_ROOT" ]; then
-echo "❌ 当前目录不在 Git 仓库内"
-exit 1
+    echo "❌ 当前目录不在 Git 仓库内"
+    exit 1
 fi
 
 cd "$REPO_ROOT"
+
+echo "清理前仓库大小:"
+BEFORE_SIZE=$(git count-objects -vH | grep "size-pack" | awk '{print $2}')
+git count-objects -vH
+echo
 
 # 检查参数
 
@@ -121,11 +126,19 @@ echo "========================================"
 echo "完成"
 echo "========================================"
 echo
+echo "清理后仓库大小:"
+AFTER_SIZE=$(git count-objects -vH | grep "size-pack" | awk '{print $2}')
+git count-objects -vH
+echo
+echo "清理前: $BEFORE_SIZE"
+echo "清理后: $AFTER_SIZE"
+echo
 echo "下一步:"
 echo
+echo "./git-clean-history-push.sh"
+echo
+echo "或手动推送:"
+echo
+echo "git remote add origin https://github.com/ext-colorful/static-assets.git"
 echo "git push --force --all"
 echo "git push --force --tags"
-echo
-echo "查看仓库大小:"
-echo
-echo "git count-objects -vH"

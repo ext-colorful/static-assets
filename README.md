@@ -16,17 +16,20 @@
 static-assets/
 ├── images/
 │   ├── 2026/06/17/              # 2026年6月17日资源
-│   ├── 20260416/                # 2026年4月16日资源
+│   │   ├── en_US/
+│   │   │   └── chrome/
+│   │   └── zh_CN/
+│   │       └── edge/
+│   ├── 2026/04/16/              # 2026年4月16日资源
 │   │   ├── en_US/
 │   │   │   └── chrome/
 │   │   ├── pt_BR/
 │   │   │   └── chrome/
 │   │   └── zh_CN/
 │   │       └── edge/
-│   ├── 20260417/                # 2026年4月17日资源
-│   ├── 20260420/                # 继续按日期组织...
 │   └── ...
 ├── git-clean-history.sh         # Git 历史清理脚本
+├── git-clean-history-push.sh    # 推送脚本
 └── README.md                     # 本文件
 ```
 
@@ -68,14 +71,33 @@ static-assets/
 **使用示例**：
 
 ```bash
+# 首次使用时确保脚本有执行权限
+chmod +x git-clean-history.sh git-clean-history-push.sh
+
 # 删除单个文件的历史
-bash git-clean-history.sh images/old-image.jpg
+./git-clean-history.sh images/old-image.jpg
 
 # 删除整个目录的历史
-bash git-clean-history.sh images/2026/06/15/
+./git-clean-history.sh images/2026/06/15/
 
 # 删除多个目标
-bash git-clean-history.sh images/file1.jpg images/2026/06/15/
+./git-clean-history.sh images/file1.jpg images/2026/06/15/
+```
+
+### 清理后推送
+
+`git-clean-history.sh` 仅负责重写历史并清理本地无引用对象。它会在结尾打印下一步推送命令，但不会自动执行推送。
+
+清理完成后，使用下面脚本重新配置远程并实际执行强制推送：
+
+```bash
+./git-clean-history-push.sh
+```
+
+如果你需要指定远程名称或 URL：
+
+```bash
+./git-clean-history-push.sh origin https://github.com/ext-colorful/static-assets.git
 ```
 
 **运作流程**：
