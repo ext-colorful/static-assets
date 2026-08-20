@@ -1,0 +1,122 @@
+:root {
+  --icss-key: icss-value;
+  --white-key: icss-white;
+  --black-key: icss-black;
+  --attachment-key: attachment-value;
+  --size-key: icss-size-value;
+  --ocss-key: ocss-value;
+  --animation-duration-key: 0.5s;
+  --animation-timing-key: cubic-bezier(0.4, 0, 0.2, 1);
+  --blue60-saturate200: blur(60px) saturate(200%);
+}
+
+html[style*=dark] body > div > div > div > div > div > div > div > div > div > div > div[data-testid=HoverCard] > div, html[style*=dark],
+html[style*=dark] div:has(> div > div > div > div > div > input[autocapitalize=sentences]),
+html[style*=dark] form[role=search][action="#"] > div > div:has(> div[dir=ltr]),
+html[style*=dark] form[role=search][action="#"] > div:last-child > div,
+html[style*=dark] form[role=search] > div > div[role=listbox][id^=typeaheadDropdown],
+html[style*=dark] #dm-main-container,
+html[style*=dark] section[aria-labelledby=root-header] > div > div > div,
+html[style*=dark] #layers > div > div > div > div > div[data-testid=chat-drawer-main] > div,
+html[style*=dark] div[data-testid=GrokDrawer] > div,
+html[style*=dark] div[data-testid=HoverCard],
+html[style*=dark] div[role=group] > div > div[role=menu]:has(> div > div > div[data-testid=Dropdown]),
+html[style*=dark] div[role=group] > div > div[role=menu] > div > div > div[data-testid=Dropdown] > div,
+html[style*=dark] div:has(> div[role=listbox][id^=typeaheadDropdown]),
+html[style*=dark] div:has(> div > div > div > div > div > textarea[autocapitalize=sentences]),
+html[style*=dark] div[role=group] > div > div > div[role=dialog],
+html[style*=dark] div[aria-labelledby=modal-header][role=dialog] > div > div[data-viewportview=true],
+html[style*=dark] div[aria-labelledby=modal-header][role=dialog] > div > div > div[data-viewportview=true],
+html[style*=dark] div[data-testid=deleteRecentSearchesDialog],
+html[style*=dark] div[data-testid=mask] + div[role=dialog],
+html[style*=dark] div[data-testid=mask] + div[data-testid=sheetDialog],
+html[style*=dark] div[role=listbox][id^=typeaheadDropdownWrapped-],
+html[style*=dark] .background-black {
+  background: linear-gradient(var(--black-key), var(--black-key)), var(--icss-key) !important;
+  background-attachment: var(--attachment-key) !important;
+  background-size: var(--size-key) !important;
+  background-blend-mode: blend-mode-value;
+}
+html[style*=dark] div[data-testid=activeRoute]:has(> a[role=tab][aria-selected=true]),
+html[style*=dark] a[role=tab]:hover {
+  background-color: rgba(255, 255, 255, 0.0588235294) !important;
+}
+
+html[style*="color-scheme: light"] body > div > div > div > div > div > div > div > div > div > div > div[data-testid=HoverCard] > div, html[style*="color-scheme: light"],
+html[style*="color-scheme: light"] div:has(> div > div > div > div > div > input[autocapitalize=sentences]),
+html[style*="color-scheme: light"] form[role=search][action="#"] > div > div:has(> div[dir=ltr]),
+html[style*="color-scheme: light"] form[role=search][action="#"] > div:last-child > div:has(> div > div[dir=ltr]),
+html[style*="color-scheme: light"] form[role=search] > div > div[role=listbox][id^=typeaheadDropdown],
+html[style*="color-scheme: light"] #dm-main-container,
+html[style*="color-scheme: light"] section[aria-labelledby=root-header] > div > div > div,
+html[style*="color-scheme: light"] #layers > div > div > div > div > div[data-testid=chat-drawer-main] > div,
+html[style*="color-scheme: light"] div[data-testid=GrokDrawer] > div,
+html[style*="color-scheme: light"] div[data-testid=HoverCard],
+html[style*="color-scheme: light"] div[role=group] > div > div[role=menu]:has(> div > div > div[data-testid=Dropdown]),
+html[style*="color-scheme: light"] div[role=group] > div > div[role=menu] > div > div > div[data-testid=Dropdown] > div,
+html[style*="color-scheme: light"] div:has(> div[role=listbox][id^=typeaheadDropdown]),
+html[style*="color-scheme: light"] div:has(> div > div > div > div > div > textarea[autocapitalize=sentences]),
+html[style*="color-scheme: light"] div[role=group] > div > div > div[role=dialog],
+html[style*="color-scheme: light"] div[aria-labelledby=modal-header][role=dialog] > div > div[data-viewportview=true],
+html[style*="color-scheme: light"] div[aria-labelledby=modal-header][role=dialog] > div > div > div[data-viewportview=true],
+html[style*="color-scheme: light"] div[data-testid=deleteRecentSearchesDialog],
+html[style*="color-scheme: light"] div[data-testid=mask] + div[role=dialog],
+html[style*="color-scheme: light"] div[data-testid=mask] + div[data-testid=sheetDialog],
+html[style*="color-scheme: light"] div[role=listbox][id^=typeaheadDropdownWrapped-],
+html[style*="color-scheme: light"] .background-white {
+  background: linear-gradient(var(--white-key), var(--white-key)), var(--icss-key) !important;
+  background-attachment: var(--attachment-key) !important;
+  background-size: var(--size-key) !important;
+  background-blend-mode: blend-mode-value;
+}
+html[style*="color-scheme: light"] div[data-testid=activeRoute]:has(> a[role=tab][aria-selected=true]),
+html[style*="color-scheme: light"] a[role=tab]:hover {
+  background-color: rgba(0, 0, 0, 0.0588235294) !important;
+}
+
+body,
+div[aria-labelledby=modal-header][role=dialog] > div > div > div[data-viewportview=true] > div > div,
+div[aria-labelledby=modal-header][role=dialog] > div > div > div[data-viewportview=true] > div > div > div > div > div:not([style*="blob:https"]),
+div[data-testid=GrokDrawer] > div > div[data-testid=GrokDrawerHeader] > div > div > div,
+#dm-main-container > div[data-testid=dm-conversation-panel] > div > div,
+div[data-testid=dm-inbox-tabs-container] > div.bg-gradient-to-r,
+div > div > div > div > div > div:has(> div > div > button[data-testid=app-bar-back]),
+div[data-testid=listCell][role=link],
+div:has(> div[data-testid=inlinePrompt]),
+div[role=group] > div > div > div[role=dialog] > div > div > div,
+div:has(> div > div > form[role=search]),
+div[data-testid=sidebarColumn] > div > div > div > div > div > div,
+div[data-testid=primaryColumn] > div > div,
+div[data-testid=primaryColumn] > div > div > div:first-child,
+div[data-testid=primaryColumn] > div > div > div > div > div > div > div,
+div[data-testid=primaryColumn] > div > div > div > div > div > div > div > div > div > div,
+div[data-testid=toolBar],
+main[role=main] > div > div > div > div,
+main[role=main] > div > div > div > div > div > div > div,
+div[data-testid=inline_reply_offscreen] > div,
+div[data-testid=inline_reply_offscreen] > div > div > div > div > div > div > div > div > div,
+div[aria-label=Grok] > div > div > div > div > div > div,
+section[role=region] > div,
+section[role=region] > div > div,
+section[role=region] > div > div > div > div,
+div[data-testid=cellInnerDiv] > div > div > button > a:hover,
+.r-14lw9ot,
+.r-kemksi,
+.r-6026j,
+input[autocapitalize=sentences],
+.transparent-tieniu {
+  background: var(--ocss-key) !important;
+}
+
+.blur-saturate500 {
+  background: var(--ocss-key) !important;
+  backdrop-filter: blur(60px) saturate(500%) !important;
+}
+
+div[data-testid=super-upsell-UpsellCardRenderProperties],
+div:has(> div > aside[role=complementary]),
+div[data-testid=whoToFollowSspAd] {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}

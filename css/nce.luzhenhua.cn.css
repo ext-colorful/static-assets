@@ -1,0 +1,50 @@
+:root {
+  --icss-key: icss-value;
+  --white-key: icss-white;
+  --black-key: icss-black;
+  --attachment-key: attachment-value;
+  --size-key: icss-size-value;
+  --ocss-key: ocss-value;
+  --animation-duration-key: 0.5s;
+  --animation-timing-key: cubic-bezier(0.4, 0, 0.2, 1);
+  --blue60-saturate200: blur(60px) saturate(200%);
+}
+
+html,
+.lang-segments .seg-btn.active,
+#settingsPanel,
+button,
+.bottom-player-bar .custom-player,
+.topbar-inner > a,
+.toggle-row,
+.btn-nav,
+.background-white {
+  background: linear-gradient(var(--white-key), var(--white-key)), var(--icss-key) !important;
+  background-attachment: var(--attachment-key) !important;
+  background-size: var(--size-key) !important;
+  background-blend-mode: blend-mode-value;
+}
+
+body,
+.segmented.tabs,
+.settings-header,
+.bento-card,
+.settings-footer-modern,
+.lesson-item,
+.last-seen,
+.transparent {
+  background: var(--ocss-key) !important;
+}
+
+.sentence {
+  background: var(--ocss-key) !important;
+  backdrop-filter: blur(60px) saturate(500%) !important;
+}
+
+#copyrightModal,
+footer,
+.hide {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}

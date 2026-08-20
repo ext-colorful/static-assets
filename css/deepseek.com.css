@@ -1,0 +1,46 @@
+:root {
+  --icss-key: icss-value;
+  --white-key: icss-white;
+  --black-key: icss-black;
+  --attachment-key: attachment-value;
+  --size-key: icss-size-value;
+  --ocss-key: ocss-value;
+  --animation-duration-key: 0.5s;
+  --animation-timing-key: cubic-bezier(0.4, 0, 0.2, 1);
+  --blue60-saturate200: blur(60px) saturate(200%);
+}
+
+body[data-ds-dark-theme] {
+  --dsr-bg: #6a6a6a !important;
+  --dsr-input-bg: #6a6a6a !important;
+  --dsr-button-grey-0: #6a6a6a !important;
+  --dsr-button-grey-1: #6a6a6a !important;
+  --dsr-button-grey-2: #6a6a6a !important;
+  --dsr-tooltip-bg: #6a6a6a !important;
+  --dsr-side-bg: #6a6a6a !important;
+  --ds-modal-content-color: #6a6a6a !important;
+  --ds-dropdown-menu-color: #6a6a6a !important;
+}
+
+[data-ds-dark-theme] ._62b4800 {
+  background: #6a6a6a !important;
+}
+
+#colorful-fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 2147483647;
+  display: block;
+  opacity: 1;
+  background: linear-gradient(var(--white-key), var(--white-key)), var(--icss-key) !important;
+  background-attachment: var(--attachment-key) !important;
+  background-size: var(--size-key) !important;
+  background-blend-mode: blend-mode-value;
+}

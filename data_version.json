@@ -1,0 +1,105 @@
+{
+  "version": "2026-08-20",
+  "sites": [
+    {
+      "css": "bilibili.com.css",
+      "hash": "3dcddd6b4e4eb7858ce06160e5ec7a0b99e7e54fe72a9bfb048de0a8f7a1b3ba"
+    },
+    {
+      "css": "bing.com.css",
+      "hash": "0a6ca4e3ae4d2746612163f7d4ee195c48f6fd2330896d6f25b7ed66d6c75215"
+    },
+    {
+      "css": "byoungd.gitbook.io.css",
+      "hash": "702ff7220c10241dd49e2454eb7f3e74190a30c307ff1ee9f5d32c6af03f16f5"
+    },
+    {
+      "css": "byoungd.github.io.css",
+      "hash": "fe08928eacf7e5763a296b042245b8ff127776fed49dffd96926d1cf4813382a"
+    },
+    {
+      "css": "chatgpt.com.css",
+      "hash": "7754a42dfa0c606264fbd211a51e3382b2f0377e4ac7014ad794ecb08b093ad4"
+    },
+    {
+      "css": "csdn.net.css",
+      "hash": "b141a959ff8dad896f7ad3046511623809bafcd6d5ed724d4d9df9610813f4dc"
+    },
+    {
+      "css": "daum.net.css",
+      "hash": "312dab847b4a2093ee38f99d20a64d3af576fc1cf8c6fdcfe09629f76cd8e671"
+    },
+    {
+      "css": "deepseek.com.css",
+      "hash": "faa4592fabe00886abc66b20c037399efbce663d8be1ce4e4a7fd99419dc08a7"
+    },
+    {
+      "css": "default.css",
+      "hash": "cbc87b204e9372e4c1c77c57d30da7f5c7377b2ff366c52b82264249e71a9fad"
+    },
+    {
+      "css": "duckduckgo.com.css",
+      "hash": "339799bf53d31d7c0eb52ca986d608837cdc3dd3a4a7c2b47f6cc637b6fa7ce9"
+    },
+    {
+      "css": "gemini.google.com.css",
+      "hash": "cf3cc29b9f2b1fe09c70a69a5c83cf5f337c7e37be2821401a6786d25b499d37"
+    },
+    {
+      "css": "github.com.css",
+      "hash": "f4639112ae0f476819ff9583cc36ed5aea06624e58a3fdb26829b9b4b2b204c5"
+    },
+    {
+      "css": "google.com.css",
+      "hash": "cbc87b204e9372e4c1c77c57d30da7f5c7377b2ff366c52b82264249e71a9fad"
+    },
+    {
+      "css": "k2think.ai.css",
+      "hash": "e9b13e4fd6b704c701e870ae9c81c811a72016bde4f3185bcbcc28733c24c716"
+    },
+    {
+      "css": "nce.ichochy.com.css",
+      "hash": "5d04d84c31181818308d78b151d9ae901e27a6866f6e2d141d37bfa96c8ef42a"
+    },
+    {
+      "css": "nce.luzhenhua.cn.css",
+      "hash": "32e48fa04437db72ed2ec28cc77d930e8981239b029ff261139dbbed1b998489"
+    },
+    {
+      "css": "notion.so.css",
+      "hash": "dec4eab0d227c5bf76b940ceac91b461a149c11bc0db8f4805ce07bb3667c706"
+    },
+    {
+      "css": "qianwen.com.css",
+      "hash": "97922bdb9f2c0db5069a0041ce749797a9034e5ef3d4962aec4d896d0f3fe9be"
+    },
+    {
+      "css": "reddit.com.css",
+      "hash": "d02a1564f7f30744f99e95f7d02591dd3089b9b59da2eada80e2565ca51566d1"
+    },
+    {
+      "css": "twitter.com.css",
+      "hash": "24e9133e6e7dbdb775137ad8d168ee5e8c7e982d0db7a823677ece132e216c44"
+    },
+    {
+      "css": "typing-word.ttentau.top.css",
+      "hash": "327846105ed7579fea8c1a6d7a56815b08b087de7dabcd0b7fc4ef4b9fdf7d18"
+    },
+    {
+      "css": "weread.qq.com.css",
+      "hash": "4b176f023f8d40e898f480be3ebf718ecc858228a3658f89ca521b0949b26153"
+    },
+    {
+      "css": "wikipedia.org.css",
+      "hash": "d8a9a0672a22cb3f8ef668dbe72763bf00fa7faa65751ed65500503d2645a409"
+    },
+    {
+      "css": "www.hello-algo.com.css",
+      "hash": "d123c1d485596dd27ac7955193c303ae99e2e87c4ef4a15f626a60b0350d1ea7"
+    },
+    {
+      "css": "youtube.com.css",
+      "hash": "89fcc89d08828501ae97f226f7771d6d0579bdbaa22e5657f280f6d0a6d13a48"
+    }
+  ]
+}

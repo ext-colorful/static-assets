@@ -1,0 +1,34 @@
+:root {
+  --icss-key: icss-value;
+  --white-key: icss-white;
+  --black-key: icss-black;
+  --attachment-key: attachment-value;
+  --size-key: icss-size-value;
+  --ocss-key: ocss-value;
+  --animation-duration-key: 0.5s;
+  --animation-timing-key: cubic-bezier(0.4, 0, 0.2, 1);
+  --blue60-saturate200: blur(60px) saturate(200%);
+}
+
+html,
+.background-white {
+  background: linear-gradient(var(--white-key), var(--white-key)), var(--icss-key) !important;
+  background-attachment: var(--attachment-key) !important;
+  background-size: var(--size-key) !important;
+  background-blend-mode: blend-mode-value;
+}
+
+body,
+.book-header,
+.transparent {
+  background: var(--ocss-key) !important;
+}
+
+.end,
+footer > a,
+footer > hr,
+.hide {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}
