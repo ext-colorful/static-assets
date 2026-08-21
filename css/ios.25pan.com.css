@@ -10,19 +10,6 @@
   --blue60-saturate200: blur(60px) saturate(200%);
 }
 
-:root {
-  --bg1: transparent !important;
-  --bg2: transparent !important;
-  --bg3: transparent !important;
-  --bg1_float: #C7EDCC !important;
-  --bg2_float: #C7EDCC !important;
-  --bg3_float: #C7EDCC !important;
-  --graph_bg_thin_float: #C7EDCC !important;
-  --graph_bg_regular_float: #C7EDCC !important;
-  --graph_bg_thin: #C7EDCC !important;
-  --graph_bg_regular: #C7EDCC !important;
-}
-
 html[data-theme=dark],
 html[data-theme=dark] aside,
 html[data-theme=dark] .playlist-panel,
