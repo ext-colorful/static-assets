@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-20",
+  "version": "2026-08-21",
   "sites": [
     {
       "css": "bilibili.com.css",
@@ -52,6 +52,10 @@
     {
       "css": "google.com.css",
       "hash": "cbc87b204e9372e4c1c77c57d30da7f5c7377b2ff366c52b82264249e71a9fad"
+    },
+    {
+      "css": "ios.25pan.com.css",
+      "hash": "15225164e8e6cefac1d5f6dcde81a28238c772d455f2043055210ac9699a340d"
     },
     {
       "css": "k2think.ai.css",

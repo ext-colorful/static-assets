@@ -1,0 +1,57 @@
+:root {
+  --icss-key: icss-value;
+  --white-key: icss-white;
+  --black-key: icss-black;
+  --attachment-key: attachment-value;
+  --size-key: icss-size-value;
+  --ocss-key: ocss-value;
+  --animation-duration-key: 0.5s;
+  --animation-timing-key: cubic-bezier(0.4, 0, 0.2, 1);
+  --blue60-saturate200: blur(60px) saturate(200%);
+}
+
+:root {
+  --bg1: transparent !important;
+  --bg2: transparent !important;
+  --bg3: transparent !important;
+  --bg1_float: #C7EDCC !important;
+  --bg2_float: #C7EDCC !important;
+  --bg3_float: #C7EDCC !important;
+  --graph_bg_thin_float: #C7EDCC !important;
+  --graph_bg_regular_float: #C7EDCC !important;
+  --graph_bg_thin: #C7EDCC !important;
+  --graph_bg_regular: #C7EDCC !important;
+}
+
+html[data-theme=dark],
+html[data-theme=dark] aside,
+html[data-theme=dark] .standalone-user-menu__panel,
+html[data-theme=dark] .login-dialog,
+html[data-theme=dark] .fm-search-dropdown {
+  background: linear-gradient(var(--black-key), var(--black-key)), var(--icss-key) !important;
+  background-attachment: var(--attachment-key) !important;
+  background-size: var(--size-key) !important;
+  background-blend-mode: blend-mode-value;
+}
+
+html[data-theme=light],
+html[data-theme=light] aside,
+html[data-theme=light] .standalone-user-menu__panel,
+html[data-theme=light] .login-dialog,
+html[data-theme=light] .fm-search-dropdown {
+  background: linear-gradient(var(--white-key), var(--white-key)), var(--icss-key) !important;
+  background-attachment: var(--attachment-key) !important;
+  background-size: var(--size-key) !important;
+  background-blend-mode: blend-mode-value;
+}
+
+.music-standalone-view,
+body {
+  background: var(--ocss-key) !important;
+}
+
+.hide {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}
