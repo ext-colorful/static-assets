@@ -25,6 +25,7 @@
 
 html[data-theme=dark],
 html[data-theme=dark] aside,
+html[data-theme=dark] .playlist-panel,
 html[data-theme=dark] .standalone-user-menu__panel,
 html[data-theme=dark] .login-dialog,
 html[data-theme=dark] .fm-search-dropdown {
@@ -36,6 +37,7 @@ html[data-theme=dark] .fm-search-dropdown {
 
 html[data-theme=light],
 html[data-theme=light] aside,
+html[data-theme=light] .playlist-panel,
 html[data-theme=light] .standalone-user-menu__panel,
 html[data-theme=light] .login-dialog,
 html[data-theme=light] .fm-search-dropdown {
@@ -46,6 +48,7 @@ html[data-theme=light] .fm-search-dropdown {
 }
 
 .music-standalone-view,
+.player-bar,
 body {
   background: var(--ocss-key) !important;
 }
