@@ -47,10 +47,17 @@ html[data-theme=light] .fm-search-dropdown {
   background-blend-mode: blend-mode-value;
 }
 
+.discover-new-song-card,
+.discover-chart-card,
 .music-standalone-view,
 .player-bar,
 body {
   background: var(--ocss-key) !important;
+}
+
+.discover-new-song-card:hover,
+.discover-chart-card:hover {
+  background: rgba(255, 255, 255, var(--window-opacity, 0.65)) !important;
 }
 
 .hide {
