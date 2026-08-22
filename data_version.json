@@ -1,9 +1,9 @@
 {
-  "version": "2026-08-21",
+  "version": "2026-08-22",
   "sites": [
     {
       "css": "bilibili.com.css",
-      "hash": "d9568bc1173f875d937137a7c26dd7bb2134a592fa84eaa9d02a3638ac3c4a34"
+      "hash": "cd6efeda3c6b418139d080a0a27fe871052f2a3ce2b373a6127668223723bdcf"
     },
     {
       "css": "bing.com.css",
