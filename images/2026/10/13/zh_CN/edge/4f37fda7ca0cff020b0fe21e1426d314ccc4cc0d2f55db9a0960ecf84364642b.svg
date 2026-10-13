@@ -1,0 +1,11 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f7f7f9"/>
+  <filter id="noise">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" result="noise"/>
+    <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0.51
+      0 0 0 0 0.51
+      0 0 0 0 0.51
+      0 0 0 0 0.06"/>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#noise)"/>
+</svg>
