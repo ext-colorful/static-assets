@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-16",
+  "version": "2026-10-22",
   "sites": [
     {
       "css": "bilibili.com.css",
@@ -19,7 +19,7 @@
     },
     {
       "css": "chatgpt.com.css",
-      "hash": "fe25d3154922d50138e30f4928e100986a05ac803bb54111bb1153a4bec66705"
+      "hash": "c3ace4edbc3bbe37b262141f29151a09e93d9d5b3a4dd4fed614267997be8619"
     },
     {
       "css": "csdn.net.css",
