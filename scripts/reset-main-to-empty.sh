@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/sh
+set -eu
 
 readonly remote=origin
 readonly branch=main
@@ -17,11 +17,12 @@ fi
 
 printf 'This will replace origin/%s with a new empty root commit.\n' "$branch"
 printf 'Existing commits will no longer be reachable from origin/%s.\n' "$branch"
-if ! IFS= read -r -p 'Type "RESET main" to continue: ' confirmation; then
+printf 'Type "RESET main" to continue: '
+if ! IFS= read -r confirmation; then
   printf '\nError: could not read confirmation.\n' >&2
   exit 1
 fi
-if [[ "$confirmation" != 'RESET main' ]]; then
+if [ "$confirmation" != 'RESET main' ]; then
   printf 'Cancelled.\n'
   exit 1
 fi
@@ -30,11 +31,13 @@ if ! remote_ref="$(git ls-remote --heads "$remote" "refs/heads/$branch")"; then
   printf 'Error: could not read origin/%s.\n' "$branch" >&2
   exit 1
 fi
-if [[ -z "$remote_ref" ]]; then
+if [ -z "$remote_ref" ]; then
   printf 'Error: remote branch origin/%s does not exist.\n' "$branch" >&2
   exit 1
 fi
-read -r expected_sha _ <<< "$remote_ref"
+read -r expected_sha _ <<EOF
+$remote_ref
+EOF
 
 empty_tree="$(git mktree </dev/null)"
 new_commit="$(printf 'Reset main history to an empty root commit\n' | git commit-tree "$empty_tree")"
