@@ -17,15 +17,6 @@ fi
 
 printf 'This will replace origin/%s with a new empty root commit.\n' "$branch"
 printf 'Existing commits will no longer be reachable from origin/%s.\n' "$branch"
-printf 'Type "RESET main" to continue: '
-if ! IFS= read -r confirmation; then
-  printf '\nError: could not read confirmation.\n' >&2
-  exit 1
-fi
-if [ "$confirmation" != 'RESET main' ]; then
-  printf 'Cancelled.\n'
-  exit 1
-fi
 
 if ! remote_ref="$(git ls-remote --heads "$remote" "refs/heads/$branch")"; then
   printf 'Error: could not read origin/%s.\n' "$branch" >&2
