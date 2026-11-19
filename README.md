@@ -50,6 +50,10 @@ images/
 3. 将图像文件放入相应目录
 4. 提交更改到 git
 
+## 重置 main 历史
+
+谨慎使用 `./scripts/reset-main-to-empty.sh`。脚本要求输入 `RESET main` 确认，然后会将远端 `origin/main` 强制更新为一个新的空根提交；原有提交将不再能从 `main` 访问。脚本不会修改 `master`。
+
 ## 许可
 
 请参考项目许可证文件。
