@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-22",
+  "version": "2026-11-28",
   "sites": [
     {
       "css": "bilibili.com.css",
@@ -7,51 +7,51 @@
     },
     {
       "css": "bing.com.css",
-      "hash": "24b3b014910e6420521357379f21be17cad0fb903a6f5693ee1ab3d2e2aa550f"
+      "hash": "23e627888e835d7e13e65e4d1b453d090322100f6f2ead4a33ac78f1b26e6cad"
     },
     {
       "css": "byoungd.gitbook.io.css",
-      "hash": "804bb38a0983105de7944bca6f600c4c45ec0bbbd3d4421865aec9dc026af07a"
+      "hash": "5e25450b71355de292c1c07cd62dbb4ceedcd020ca6677dd990413cb3ff7e9ad"
     },
     {
       "css": "byoungd.github.io.css",
-      "hash": "c7f82385d39ca18768770065af3b52b3fddf33989ef2d13a8f208ce3226e1989"
+      "hash": "dc26cb6491a2a81a63feed1e8ca87b89469259dec118f0a6911dd7d04343deeb"
     },
     {
       "css": "chatgpt.com.css",
-      "hash": "c3ace4edbc3bbe37b262141f29151a09e93d9d5b3a4dd4fed614267997be8619"
+      "hash": "f6dcd48dea808ccdfb44dd7881a66a22fd864cca3c7aaec28f86baf78449b377"
     },
     {
       "css": "csdn.net.css",
-      "hash": "393fa4ea68447e8485e5010a31ae67e17986d964de58162e38ea34a2abfabcb5"
+      "hash": "22c8a9c83463a2127749037e5f2ea8066e083fd5f4c08fb95251819db5aa8202"
     },
     {
       "css": "daum.net.css",
-      "hash": "8defde43e153cdd5a9dc21517d34450f690ffa3e1718b033cb654e4e598f278f"
+      "hash": "32633d257f807940b805a127176338914dcc7ba8ab2ae596afeeec560eac532f"
     },
     {
       "css": "deepseek.com.css",
-      "hash": "3a6ee48d5832d221e1f012d5b88ec97d4138f0ce93d23d330af28163a6518f4f"
+      "hash": "3cf7e4a3293133aa496fab3bbf24ddb25701f9208ffcbc601df27c052ba4d39b"
     },
     {
       "css": "default.css",
-      "hash": "fa9b340bc2061c966779e9162f24f0ae08128f4fe233c94501afa9ad3e13fa6a"
+      "hash": "26059b98293196e4952392263e56a0ecff43bb105ad31930e2e1ba182f1b2d78"
     },
     {
       "css": "duckduckgo.com.css",
-      "hash": "cabc1601c13894b06bd804d6f6872ced8fe6b51aedcf11effbc37bfbac7d7ae5"
+      "hash": "18fa8d900c675726e87ce7f907e922eb033c9eeb5c5a8bc20528ac204faf9cff"
     },
     {
       "css": "gemini.google.com.css",
-      "hash": "751b69d51c81720ccffd15b610528b8cb21644dd756cabff7f5ce1e3ac02399a"
+      "hash": "ee21db0dc7d82d435463bf611bbf353c965048336e053d078acba5ffdebccd6d"
     },
     {
       "css": "github.com.css",
-      "hash": "53f541155ecbe2194d08a4e8b35d17735022282f4d366e55725fb9dfbc99306c"
+      "hash": "e7325c054da8acb7724410184999524c4f65f403096def7cab7d1a56f8164950"
     },
     {
       "css": "google.com.css",
-      "hash": "fa9b340bc2061c966779e9162f24f0ae08128f4fe233c94501afa9ad3e13fa6a"
+      "hash": "26059b98293196e4952392263e56a0ecff43bb105ad31930e2e1ba182f1b2d78"
     },
     {
       "css": "ios.25pan.com.css",
@@ -59,7 +59,7 @@
     },
     {
       "css": "k2think.ai.css",
-      "hash": "4c0fa279490bfc0930b11604d8a67df898b99fac38b94e22dbd20a57edc090bb"
+      "hash": "ba7dead1a40db546531c73724e5db9e25dbabc795c581800f5fd335f0b4ca7cb"
     },
     {
       "css": "nce.ichochy.com.css",
@@ -67,43 +67,43 @@
     },
     {
       "css": "nce.luzhenhua.cn.css",
-      "hash": "73a4b4ce4b73282f5348d8cad6a81a4ff645d6043077b611404611ccfa9f25b8"
+      "hash": "90b0a225e22dc83bba6ed2badcd3b4a63cfa1d8ef184b9a6900d2f6b03278b4f"
     },
     {
       "css": "notion.so.css",
-      "hash": "12276bb540bb6e71a803add266967e2111e822386cc4a78edb8a17d779db7de9"
+      "hash": "5d2ef350025c541b8a9a865fde375c2e0c93bbced3c728354e6d51ac45eeee19"
     },
     {
       "css": "qianwen.com.css",
-      "hash": "286cd54417cad4c89896a248202d617e5261632d11f78aa13fffad27ae700fb2"
+      "hash": "5aaa13150e0fbe81114b96907bbd283eed9d560a83536db2b1fe6195348dd8ed"
     },
     {
       "css": "reddit.com.css",
-      "hash": "0c8dd05cea1e283b92f28e06ea044196e05ad0c8eaaaf1bde0930126aa675826"
+      "hash": "e8c0b3f0929890b9738850c87a5828b54a93399840387cd295dfb3ec10ad781d"
     },
     {
       "css": "twitter.com.css",
-      "hash": "030b3a75a80ce6d3c1e7b779d335cafceaeee01536563c103e737096b8371d65"
+      "hash": "a5c92f1185eeeb043e24eb9ba96d26cad1c66681b94509331832753d4d91e334"
     },
     {
       "css": "typing-word.ttentau.top.css",
-      "hash": "9495679976beda04f7b6a40a8c357a723c43d7db34b5eeafffc3e9bb11090b1b"
+      "hash": "95bbf77700a5d3dea4399f2ca9d691d72630c48c939b8f81cc7b33fc162a28bc"
     },
     {
       "css": "weread.qq.com.css",
-      "hash": "02a1f01e9b4b2551c8aa9269e727f7b4eed656f4cc9cda96ce8ea9b473a94e8e"
+      "hash": "119b9e4e0385377c57301589d3c2f1e44676f7e384092608b95ffe77c480cfe2"
     },
     {
       "css": "wikipedia.org.css",
-      "hash": "b645d54546cb7a2f7654d42f78b0b55a4f1e9ed2afab46b864ae503e671e4526"
+      "hash": "2d2b17e561e783dadc7e11eac09edfd4a6e9aefbb53bd65c76e79c634f32cf82"
     },
     {
       "css": "www.hello-algo.com.css",
-      "hash": "4a53eab6452640dd3fee17abc67ab24d7294ede19e2269346dd15d04ec4e5859"
+      "hash": "ad7125547df7e4d8472962c759a09b0c0c3c24a01b997bbc091fea445d0ca3a9"
     },
     {
       "css": "youtube.com.css",
-      "hash": "ff21d8b5da5ec1cf8656aa3cadf136670662e8b734efb026cfbe3486b82cb4b8"
+      "hash": "66364779db4a7310f1bae1fcb8f915484a63f0837ff8ea4d4d96a0b4689f601c"
     }
   ]
 }
