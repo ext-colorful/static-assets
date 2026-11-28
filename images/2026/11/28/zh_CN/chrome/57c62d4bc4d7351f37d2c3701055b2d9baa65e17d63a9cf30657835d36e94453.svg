@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="9 7 110 112" width="128" height="128">
+  <defs>
+    
+    <linearGradient id="au_sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="50%" stop-color="#312E81" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    
+    <linearGradient id="au_g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFAA" />
+      <stop offset="55%" stop-color="#00E5FF" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="au_g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E93" />
+      <stop offset="55%" stop-color="#D946EF" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    
+    <linearGradient id="au_grip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="28%" stop-color="#818CF8" />
+      <stop offset="68%" stop-color="#312E81" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="au_gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="35%" stop-color="#FEF3C7" />
+      <stop offset="75%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+    <linearGradient id="au_shade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350F" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#78350F" stop-opacity="0" />
+    </linearGradient>
+
+    <clipPath id="au_clip">
+      <path d="M 10 74 A 54 54 0 0 1 118 74
+               C 111 64, 100 64, 93 74
+               C 85 63, 72 63, 64 74
+               C 56 63, 43 63, 35 74
+               C 28 64, 17 64, 10 74 Z" />
+    </clipPath>
+
+    <filter id="au_drop" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <g filter="url(#au_drop)">
+    
+    <g>
+      <rect x="60.5" y="66" width="7" height="26" fill="url(#au_gold)" />
+      <rect x="60.5" y="66" width="7" height="12" fill="url(#au_shade)" />
+      <rect x="56.5" y="89" width="15" height="3.5" rx="1.75" fill="url(#au_gold)" />
+      <path d="M 57 92.5 L 71 92.5 L 71 111 A 7 7 0 0 1 57 111 Z" fill="url(#au_grip)" />
+      <rect x="59.5" y="95" width="2.2" height="17" rx="1.1" fill="#FFFFFF" opacity="0.4" />
+    </g>
+
+    
+    <g>
+      <path d="M 58 21.5 L 59.5 12 C 60 9.5, 61.8 8, 64 8 C 66.2 8, 68 9.5, 68.5 12 L 70 21.5 Z" fill="url(#au_grip)" />
+      <rect x="56" y="19.5" width="16" height="3.2" rx="1.6" fill="url(#au_gold)" />
+      <path d="M 61.2 11.2 L 60.4 18.5" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity="0.55" />
+    </g>
+
+    
+    <g clip-path="url(#au_clip)">
+      <rect x="8" y="18" width="112" height="60" fill="url(#au_sky)" />
+      
+      <path d="M 8 58 C 36 28, 68 58, 120 26 L 120 52 C 74 78, 38 48, 8 76 Z" fill="url(#au_g2)" />
+      
+      <path d="M 8 38 C 40 16, 74 44, 120 18 L 120 34 C 76 58, 42 32, 8 54 Z" fill="url(#au_g1)" />
+      
+      <path d="M 42 34 L 44 40 L 50 42 L 44 44 L 42 50 L 40 44 L 34 42 L 40 40 Z" fill="#FFFFFF" />
+      <path d="M 88 46 L 89.5 50.5 L 94 52 L 89.5 53.5 L 88 58 L 86.5 53.5 L 82 52 L 86.5 50.5 Z" fill="#FEF08A" />
+      <circle cx="66" cy="30" r="2.2" fill="#FFFFFF" />
+      <circle cx="26" cy="60" r="1.8" fill="#FFFFFF" />
+      <circle cx="102" cy="38" r="1.8" fill="#FFFFFF" />
+    </g>
+  </g>
+</svg>
